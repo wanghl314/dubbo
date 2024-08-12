@@ -31,8 +31,8 @@ import org.springframework.boot.autoconfigure.web.client.RestTemplateAutoConfigu
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
 import zipkin2.Span;
-import zipkin2.codec.BytesEncoder;
-import zipkin2.codec.SpanBytesEncoder;
+import zipkin2.reporter.BytesEncoder;
+import zipkin2.reporter.SpanBytesEncoder;
 import zipkin2.reporter.Sender;
 
 import static org.apache.dubbo.spring.boot.observability.autoconfigure.ObservabilityUtils.DUBBO_TRACING_ZIPKIN_CONFIG_PREFIX;
